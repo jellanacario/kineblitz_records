@@ -1,0 +1,334 @@
+/* background = #f9f9f9 / #f2f2f2
+header = #003566
+font-color/s = #0E1111 / #f9f9f9
+button = #fb8500 / #ffb703 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #f2f2f2; */
+    height: 100%;
+    background: #E4E5E6;
+    color: #0E1111;
+    font-family: Montserrat;
+    min-width: 500px;
+}
+
+header h3 {
+    font-size: min(25px, 25px);
+    text-align: center;
+    padding-left: 25px;
+}
+
+main {
+    margin-top: 75px;
+    gap: 32px;
+}
+
+/* BODY CONTENTS */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+}
+
+.login-button {
+    background: rgba(255, 183, 3, 0.9);
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.login-note{
+    font-style: italic;
+    font-size: 10px;
+    padding-left: 32px;
+}
+
+/* LOG IN PAGE */
+.login-page {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 32px;
+    margin: 32px;
+}
+
+#main-holder {
+    width: 600px;
+    height: 500px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #f2f2f2;
+    border-radius: 7px;
+    border: 1px solid#0E1111;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  #login-error-msg-holder {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #login-error-msg {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+  
+  #login-form {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .login-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #main-holder img {
+    width: 100px;
+    height: 100px;
+    margin-top: 32px;
+  }
+
+  .login-form-field::placeholder {
+    color: #3a3a3a7b;
+  }
+  
+  .login-form-field {
+    width: 250px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  #login-form-submit {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #003566;
+    cursor: pointer;
+  }
+
+
+/* RECORDS PAGE */
+
+/* body */
+.record {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 0 32px;
+    margin: 112px 32px 32px 32px;
+    gap: 10px;
+    /* background-color: #2a455e; */
+}
+/* title */
+.record-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dbh1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 28px;
+    align-items: center;
+}
+
+.dbh3 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.db-status-containers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 32px;
+
+}
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding: 5%;
+    
+    border: #C32626 solid;
+    border-width: 8px;
+    border-radius: 20px;
+}
+
+/* DISPLAY OF THE TABLE */
+.table-card{
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding: 5%;
+    
+    border-width: 10px;
+    border-radius: 50px;
+}
+.card-temp {
+    font-family: Arial;
+    font-weight: bold;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+    padding: 5%;
+    color: #f1f1f1;
+}
+
+.graph_buttons {
+    font-size: 15px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.for_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#authentication-bar{
+    font-family: Arial;
+    font-weight: bold;
+    color: #00AEEF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-details{
+    color: #00AEEF;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-elements-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #f1f1f188;
+}
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+#readings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#readings-table {
+    background-color: #81C6E8;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}   
+tr, td {
+    padding: 0.25rem;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+tr:hover {
+    background-color: #ddd;
+}
+th {
+    position: sticky;
+    top: 0;
+    background-color: #50b8b4;
+    color: white;
+}
+
+.graph_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 20px;
+}
+
+#view-data-button {
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 183, 3, 0.9);
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#hide-data-button {
+    width: 200px;
+    height: 50px;
+    background:#3a3a3a68;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#delete-button {
+    width: 200px;
+    height: 50px;
+    background: #C32626 solid;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
